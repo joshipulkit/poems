@@ -7,6 +7,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{cmbright}
 
+\usepackage[hidelinks]{hyperref}
+\usepackage{nameref}
+
 \title{\textbf{MY FAVOURITE POEMS}}
 \author{PULKIT JOSHI}
 \date{}
@@ -22,7 +25,9 @@
         % A PRAYER FOR MY DAUGHTER %
 
         \newpage
-        \section{A Prayer for my Daughter}
+        \section*{A Prayer for my Daughter}
+        \label{sec:A Prayer for my Daughter}
+        \addcontentsline{toc}{section}{\nameref{sec:A Prayer for my Daughter}}
         \subsection*{William Butler Yeats}
 
         \vspace{15pt}
@@ -126,9 +131,11 @@
         And custom for the spreading laurel tree.\\
         
 
-        % IF %
+        % BECAUSE I COULD NOT STOP FOR DEATH %
         \newpage
-        \section{Because I could not stop for Death}
+        \section*{Because I could not stop for Death}
+        \label{sec:Because I could not stop for Death}
+        \addcontentsline{toc}{section}{\nameref{sec:Because I could not stop for Death}}
         \subsection*{Emily Dickinson}
 
         \vspace{15pt}
